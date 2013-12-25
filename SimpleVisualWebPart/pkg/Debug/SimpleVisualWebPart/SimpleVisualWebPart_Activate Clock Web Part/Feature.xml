@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="8fb28a06-a4ca-431f-a2ac-ff2b68b8fbc9" Scope="Site" Title="Activate Clock Web Part">
+  <ElementManifests>
+    <ElementManifest Location="ClockVisualWebPart\Elements.xml" />
+    <ElementFile Location="ClockVisualWebPart\ClockVisualWebPart.webpart" />
+  </ElementManifests>
+</Feature>

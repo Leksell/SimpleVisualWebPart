@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="1858fc3c-3a27-43d4-9d57-a24338582983" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SimpleVisualWebPart.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SimpleVisualWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9a5dad13b9331d29" Namespace="SimpleVisualWebPart.ClockVisualWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SimpleVisualWebPart\Scripts\ClockVWP.js" />
+    <TemplateFile Location="Layouts\SimpleVisualWebPart\Scripts\jquery-1.10.2.min.js" />
+    <TemplateFile Location="Layouts\SimpleVisualWebPart\Styles\ClockVWP.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SimpleVisualWebPart_Activate Clock Web Part\Feature.xml" />
+  </FeatureManifests>
+</Solution>

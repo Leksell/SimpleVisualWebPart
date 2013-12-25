@@ -1,0 +1,5 @@
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPart\obj\Debug\SimpleVisualWebPart.csprojResolveAssemblyReference.cache
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPart\bin\Debug\SimpleVisualWebPart.dll
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPart\bin\Debug\SimpleVisualWebPart.pdb
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPart\obj\Debug\SimpleVisualWebPart.dll
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPart\obj\Debug\SimpleVisualWebPart.pdb
