@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c9335a6b-2013-4863-8a31-df0ac6716746" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SimpleVisualWebPartSandBox.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SimpleVisualWebPartSandBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fa41cdbaed6e7cd5" Namespace="SimpleVisualWebPartSandBox.ClockVisualWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SimpleVisualWebPartSandBox_ActivateClockWebPart\Feature.xml" />
+  </FeatureManifests>
+</Solution>

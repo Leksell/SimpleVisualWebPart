@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="This feature will activate sandbaox solution clock web part." Id="f0b9bed1-4fd3-49a4-ba06-99dc6e973e1a" Scope="Site" Title="Activate Clock Web Part SandBox">
+  <ElementManifests>
+    <ElementManifest Location="ClockVisualWebPart\Elements.xml" />
+    <ElementFile Location="ClockVisualWebPart\ClockVisualWebPart.webpart" />
+    <ElementManifest Location="Style Library\Elements.xml" />
+    <ElementFile Location="Style Library\ClockVisualWebPart\Scripts\ClockVWP.js" />
+    <ElementFile Location="Style Library\ClockVisualWebPart\Scripts\jquery-1.10.2.min.js" />
+    <ElementFile Location="Style Library\ClockVisualWebPart\Styles\ClockVWP.css" />
+  </ElementManifests>
+</Feature>

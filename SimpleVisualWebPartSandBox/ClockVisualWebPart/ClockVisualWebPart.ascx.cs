@@ -3,16 +3,12 @@ using System;
 using System.ComponentModel;
 using System.Web.UI.WebControls.WebParts;
 
-namespace SimpleVisualWebPart.ClockVisualWebPart
+namespace SimpleVisualWebPartSandBox.ClockVisualWebPart
 {
     [ToolboxItemAttribute(false)]
     public partial class ClockVisualWebPart : WebPart
     {
-        // Uncomment the following SecurityPermission attribute only when doing Performance Profiling on a farm solution
-        // using the Instrumentation method, and then remove the SecurityPermission attribute when the code is ready
-        // for production. Because the SecurityPermission attribute bypasses the security check for callers of
-        // your constructor, it's not recommended for production purposes.
-        // [System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.Assert, UnmanagedCode = true)]
+     
         public ClockVisualWebPart()
         {
         }
@@ -24,6 +20,38 @@ namespace SimpleVisualWebPart.ClockVisualWebPart
         }
 
 // If you have another name on your project and web part, then copy only the things under here and replace what you have under the base.OnInit above here.
+
+        // Adding the Scripts/style links
+        protected override void Render(System.Web.UI.HtmlTextWriter writer)
+        {
+            writer.Write(BindScript("/Style Library/ClockVisualWebPart/Scripts/jquery-1.10.2.min.js", true));
+            writer.Write(BindScript("/Style Library/ClockVisualWebPart/Scripts/ClockVWP.js", true));
+            writer.Write(BindStyle("/Style Library/ClockVisualWebPart/Styles/ClockVWP.css", true));
+            base.Render(writer);
+        }
+        // Loading the scripts
+        private string BindScript(string ScriptUrl, bool PickFromSiteCollection)
+        {
+            if (PickFromSiteCollection)
+                ScriptUrl = Microsoft.SharePoint.Utilities.SPUrlUtility.CombineUrl(SPContext.Current.Site.RootWeb.Url, ScriptUrl);
+            else
+                ScriptUrl = Microsoft.SharePoint.Utilities.SPUrlUtility.CombineUrl(SPContext.Current.Web.Url, ScriptUrl);
+
+            return string.Format(@"<script type=""text/javascript"" src=""{0}""></script>", ScriptUrl);
+
+        }
+
+        // Load the style
+        private string BindStyle(string StyleUrl, bool PickFromSiteCollection)
+        {
+            if (PickFromSiteCollection)
+                StyleUrl = Microsoft.SharePoint.Utilities.SPUrlUtility.CombineUrl(SPContext.Current.Site.RootWeb.Url, StyleUrl);
+            else
+                StyleUrl = Microsoft.SharePoint.Utilities.SPUrlUtility.CombineUrl(SPContext.Current.Web.Url, StyleUrl);
+
+            return string.Format(@"<link rel=""stylesheet"" href=""{0}"" type=""text/css"" />", StyleUrl);
+        }
+
 
         //Clock background color settings
 
@@ -67,5 +95,4 @@ namespace SimpleVisualWebPart.ClockVisualWebPart
         }
     }
 }
-
 

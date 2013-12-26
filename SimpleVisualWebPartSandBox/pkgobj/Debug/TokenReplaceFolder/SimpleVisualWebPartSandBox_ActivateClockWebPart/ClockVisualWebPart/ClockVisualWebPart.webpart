@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SimpleVisualWebPartSandBox.ClockVisualWebPart.ClockVisualWebPart, SimpleVisualWebPartSandBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fa41cdbaed6e7cd5" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Clock Web Part</property>
+        <property name="Description" type="string">This web part will show a clock on your page.</property>
+        <!--Under here we add the default value in the web part settings filed.-->
+        <property name="ClockBackgroundColor" type="string">#999999</property>
+        <property name="ClockTextColor" type="string">#ffffff</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

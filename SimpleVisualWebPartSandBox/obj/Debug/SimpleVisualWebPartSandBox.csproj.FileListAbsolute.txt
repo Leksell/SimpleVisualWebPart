@@ -1,0 +1,4 @@
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPartSandBox\bin\Debug\SimpleVisualWebPartSandBox.dll
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPartSandBox\bin\Debug\SimpleVisualWebPartSandBox.pdb
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPartSandBox\obj\Debug\SimpleVisualWebPartSandBox.dll
+C:\Souce\SimpleVisualWebPart\SimpleVisualWebPartSandBox\obj\Debug\SimpleVisualWebPartSandBox.pdb
